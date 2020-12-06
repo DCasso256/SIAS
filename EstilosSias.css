@@ -1,0 +1,309 @@
+/* EstilosGenerales.css - Pemex Exploracion y Produccion*/
+
+.addInput{
+    padding: 0px 5px; 
+    font:bold 12pt sans-serif; 
+    background: dodgerblue; 
+    color: white; 
+    border: solid gray thin; 
+    cursor: pointer
+}
+
+.anuncios{
+    text-align: left; 
+    font: 9pt sans-serif; 
+    float: left; 
+    margin-bottom: 20px; 
+    background-color: white; 
+    border-top-left-radius: 2em;
+}
+
+.anuncios div{
+    line-height: 2em;
+    background-color: darkcyan;
+    font-size: 11pt; 
+    color: white; 
+    text-align:center; 
+    border-top-left-radius: 2em;
+}
+
+.anuncios ul{
+    line-height: 2em; 
+    width: 290px; 
+    border: gray solid thin; 
+    height: 220px; 
+    overflow-y: scroll;
+}
+
+.busqueda{
+    text-align: left; 
+    font: 10pt sans-serif; 
+    float:left; 
+    margin: 30px; 
+    background-color: white;
+}
+
+.busquedaTabla{
+    width: 100px;
+    box-shadow: gray 2px;
+}
+
+.contacto{
+    text-align: left; 
+    font: 9pt sans-serif; 
+    float: left; 
+    margin-top: 30px; 
+    margin-left: 30px; 
+    margin-right: 30px; 
+    margin-bottom: 20px; 
+    background-image: url('imagenes/ingpemexoverall.jpg'); 
+    line-height: 2em; 
+    padding: 15px 17px;
+}
+
+.contenido{
+    text-align: left; 
+    font: 9pt sans-serif; 
+    float:left; 
+    margin-left: 75px; 
+    margin-top:50px; 
+    margin-bottom: 20px; 
+    margin-right: 30px;
+}
+
+.etiqueta{
+    float:bottom; 
+    text-align: center; 
+    background-color:silver;
+    color:#0066cc;
+    font-family: sans-serif;
+    font-weight: bold;
+    line-height: 2em;
+}
+
+.imgElemento{
+    width: 100px; 
+    height: 100px; 
+    float:left; 
+    margin-right: 1em;
+    margin-bottom: 1em;
+    alignment-baseline: text-after-edge;
+}
+
+.imgVideo{
+    width:220px;
+    height:150px;
+}
+
+.imgVideo:hover{
+    cursor: pointer;
+}
+
+.delButton{
+    color: red;
+    font: bold 12pt sans-serif;
+    text-decoration: none;
+    float: right;
+    margin-right: 5px;
+}
+
+.enlace{
+  border-top: gray solid thin; 
+  padding-left: 5px;
+}
+
+.enlace a{
+  text-decoration: none;
+}
+
+.utiles{
+    text-align: left; 
+    font: 9pt sans-serif; 
+    float: left; 
+    margin-top: 20px; 
+    margin-left: 30px; 
+    margin-right: 30px; 
+    margin-bottom: 20px; 
+    background-color: white;
+}
+
+.utiles ul{
+    line-height: 2em; 
+    width: 250px; 
+    border: gray solid thin; 
+    border-top-right-radius: 2em;
+}
+
+.fieldsetForm{
+  background-color: honeydew;
+  width: 60%;  
+  font:11pt sans-serif;
+}
+
+/* Aquí declaramos el estilo del fieldset que contiene la información general al inicio de cada página, este fieldset se encuentra
+en la sección media de la tabla que divide el contenido central de la página.
+*/
+.fieldsetInfo{
+    font:10pt sans-serif;
+    text-align: justify;
+    background-color: whitesmoke;
+    border: gray solid thin;
+    width: 510px;
+    height: 500px;
+    line-height: 1.5;
+    overflow-y: scroll;
+}
+
+/* Este pie de página solo tiene como propósito visualizar la información del autor y el año de actualización del
+* portal, su propósito es meramente estético al diseño web.
+*/
+.footer{
+    position: relative;
+    width: 1348px;
+    font: 8pt sans-serif; 
+    background-color: #555555;
+    text-align: right;
+    clear: both;
+    line-height: 2em;
+}
+
+/* Este pie de página solo tiene como propósito visualizar la información del autor y el año de actualización del
+* portal, su propósito es meramente estético al diseño web.
+*/
+.footer2{
+    position: fixed;
+    left:0px; 
+    bottom:0px; 
+    right:0px;
+    /*width: 100%;*/
+    font: 8pt sans-serif; 
+    background-color: silver;
+    text-align: right;
+    clear: both;
+    line-height: 2em;
+}
+
+/* Este es el estilo de la cabecera de las páginas, aqui está contenido el logotipo del SSPA y el nombre del modulo de la intranet.*/
+.header{
+    background-color: white; 
+    font: 20pt sans-serif;
+    color: black;
+    width: 1348px;
+    cursor: pointer;
+}
+
+.header label:hover{
+    cursor: pointer;
+}
+
+.institucional{
+    text-align: left; 
+    font: 9pt sans-serif; 
+    float:left; 
+    margin-top: 50px; 
+    margin-left: 30px; 
+    margin-right: 30px; 
+    margin-bottom: 20px;
+}
+
+.institucional ul{
+    line-height: 2em; 
+    width: 250px; 
+    border: gray solid thin; 
+    border-top-right-radius: 2em;
+}
+
+/*Aquí, los estilos del titulo de las susbsistemas del sspa*/
+.subsistema{
+    font: 14pt sans-serif; 
+    background-color: green; 
+    color: white;
+}
+
+.titulo{
+    position: relative;
+    font: bolder 175px sans-serif;
+}
+
+.modal{
+    width:100%;
+    height:100%;
+    background-color: rgba(0,0,0,0.7);
+    /*filter: alpha(opacity=70);  IE8*/
+    display: none;
+    top:0;
+    left:0;
+    z-index:2;
+    position:fixed;
+    overflow:auto;
+}
+
+.modal div{
+    margin:auto;
+    background-color:#fff;
+    position:relative;
+    top:25%;
+    left:0;
+    width:561px;
+    height:316px;
+    padding:0;
+    outline:0;    
+}
+
+.modal iframe{
+    width: 560px;
+    height: 315px;
+}
+
+.modal label{
+    color:inherit;
+    z-index: 3;
+    background-color:darkcyan;
+    font:bold 12pt sans-serif;
+    padding:5px;
+    right:0;
+    position: absolute;
+}
+
+.modal label:hover{
+    cursor: pointer;
+}
+
+.videos{
+    text-align: left; 
+    font: 9pt sans-serif; 
+    float: left; 
+    margin-top: 20px;
+    margin-bottom: 20px; 
+    background-color: white; 
+    clear:left; 
+    border-top-left-radius: 2em;
+}
+
+.videos div{
+    line-height: 2em; 
+    background-color: darkcyan; 
+    font-size: 11pt; 
+    color: white; 
+    border-top-left-radius: 2em; 
+    text-align:center;
+}
+
+.videos ul{
+    line-height: 2em; 
+    width: 290px; 
+    border: gray solid thin; 
+    height: 500px; 
+    overflow-y: scroll;
+}
+/*----------------------------------------------------------------------------
+Aquí se describen los estilos del slideshow*/
+#slideShowImages{
+    border: none;
+    background-color: white;
+}
+
+#slideShowImages img{
+    width: 1250px;
+    height: 335px;
+}

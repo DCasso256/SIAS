@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TEST</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .button{
+                color:red;
+                background-color:blue;
+                display:none;
+            }
+        </style>
+        <script type="text/javascript">
+            var clicks = 1;
+            function crear(){
+                if (clicks <= 9){
+                clicks ++;
+                z = document.createElement("tr");
+                y = document.createElement("td");
+                y2 = document.createElement("td");
+                z.appendChild(y);
+                z.appendChild(y2);
+                x = document.createElement("input");
+                x.setAttribute("type", "file");
+                x.setAttribute("name", "userfile");
+                x.setAttribute("id", "files");
+                y2.appendChild(x); 
+                document.getElementById("tabla").appendChild(z);
+                }
+            }
+            function change(){
+                label = document.getElementsByTagName('label');
+                label.style.background='red';
+            }
+        </script>
+        <style>
+            .tab_guia{
+                font:bold 14pt sans-serif; 
+                text-align:center;
+                width: 400px;
+                height: 400px;
+                cursor: pointer;
+                color: white;
+            }
+            .tab_guia td{
+                width: 50%;
+                height: 50%;
+                max-height: 250px;
+                max-width: 250px;
+            }
+        </style>
+    </head>
+    <body>        
+        <button onclick="change();">Agregar input</button>
+        <div id="recent">
+            <table id="tabla">
+                <tr><td>Archivo</td><td><input type="file"></td></tr>
+            </table>                        
+            <label style="background: blue; color: white;">Last </label>
+            <label style="background: blue; color: white;">Chance</label>
+        </div>
+        <div>
+            <table class="tab_guia">
+                <tr>
+                    <td onmouseover="" style="background-color: red">12 MPI</td><td style="background-color: dodgerblue">SASP</td>
+                </tr>
+                <tr>
+                    <td onmouseover="" style="background-color: green">SAA</td><td style="background-color: gray">SAST</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

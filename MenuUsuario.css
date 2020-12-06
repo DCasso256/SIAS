@@ -1,0 +1,114 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 15/10/2015, 07:40:48 PM
+    Author     : Diego
+*/
+
+
+/* Esta es la última versión del menu del usuario, para realizar las tareas administrativas, 
+sin problemas de compatibilidad con IE.
+*/
+
+
+* {
+    margin:0px;
+    padding:0px;
+}
+
+header2 {
+    position: absolute;
+    margin:auto;
+    width:1349px;
+    overflow: hidden;
+}
+
+ul, ol {
+    list-style:none;
+}
+
+.nav > li {
+    float:left;
+}
+
+.nav li{
+    float: left;
+    width: 192.5px
+}
+
+.nav li a {
+    font: 10pt sans-serif;
+    background-color: #555555;
+    color:#fff;
+    text-decoration:none;
+    padding:7px 7px;
+    display:block;
+}
+
+.nav li a:hover {
+    background-color: #555555;
+    opacity:0.9; 
+}
+
+.nav li ul {
+    display:none;
+    position:absolute;
+    float: bottom;
+    z-index: 1;
+}
+
+.nav li:hover > ul {
+    display:block;
+}
+
+.nav li ul li:hover > ul{
+   display:block;   
+}
+
+.nav li ul li ul li:hover > ul{
+   display:block;   
+}
+/*
+.nav li ul li ul li ul li{
+   position:relative;
+    float: right;   
+}
+
+.nav li ul li ul li ul{
+    display:none;
+    position:absolute;
+    left:192px;
+    bottom:34px;
+    z-index: 1;
+}*/
+
+.nav li ul li{
+    position:relative;
+    float: bottom;
+}
+.nav li ul li ul{
+    display:none;
+    position:absolute;
+    /*float: right;
+    left:192px;*/
+    top:34px;
+    z-index: 1;
+}
+
+.nav li ul li a{
+    background-color: darkcyan;
+    font-size: 9pt;
+    padding:10px 10px;
+    opacity: 0.8;
+}
+
+.nav li label{
+    font: 10pt sans-serif;
+    background-color: #555555;
+    color:#fff;
+    text-decoration:none;
+    padding:10px 10px;
+}
